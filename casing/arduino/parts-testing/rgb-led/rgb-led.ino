@@ -1,9 +1,15 @@
-void setup() {
-  // put your setup code here, to run once:
+#define RGB_R 22
+#define RGB_Y 20
+#define RGB_G 24 // next to longest 5V pin alone
 
+void setup() {
+  pinMode(RGB_R, OUTPUT);
+  pinMode(RGB_G, OUTPUT);
+  pinMode(RGB_Y, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  digitalWrite(RGB_R, LOW);
+  digitalWrite(RGB_G, LOW);
+  digitalWrite(RGB_Y, HIGH);
 }
