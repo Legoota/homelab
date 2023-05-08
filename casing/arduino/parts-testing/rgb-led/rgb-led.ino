@@ -9,7 +9,7 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(RGB_R, LOW);
+  digitalWrite(RGB_R, HIGH);
   digitalWrite(RGB_G, LOW);
-  digitalWrite(RGB_Y, HIGH);
+  digitalWrite(RGB_Y, LOW);
 }
