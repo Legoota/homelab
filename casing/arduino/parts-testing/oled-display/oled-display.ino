@@ -3,8 +3,13 @@
 //https://github.com/olikraus/u8g2/wiki
 
 // OLED <===> Mega2560
-// 1    <===>
-//
+// 1    <===> GND
+// 2    <===> 3.3V
+// 4    <===> 52 (SPI CLK)
+// 5    <===> 51 (SPI MOSI)
+// 14   <===> 9
+// 15   <===> 8
+// 16   <===> 10
 
 #include <Arduino.h>
 #include <U8g2lib.h>
@@ -20,7 +25,12 @@ void setup() {
 void loop() {
   u8g2.firstPage();
   do {
-    u8g2.setFont(u8g2_font_unifont_t_symbols);
-    u8g2.drawGlyph(5, 20, 0x23f0);
+    // u8g2.setFont(u8g2_font_unifont_t_symbols);
+    // u8g2.drawGlyph(5, 20, 0x23f0);
+    //u8g2.setFont(u8g2_font_chargen_92_mf);
+    u8g2.setFont(u8g2_font_crox3cb_mr);
+    u8g2.drawStr(0,17, "ligne numero 1");
+    u8g2.drawStr(0,38, "ligne numero 2");
+    u8g2.drawStr(0,59, "ligne numero 3");
   } while ( u8g2.nextPage() );
 }
