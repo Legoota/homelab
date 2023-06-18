@@ -31,12 +31,12 @@ Homemade server to learn clustering, services, all of that in a sleeper case enh
 ### Hardware setup
 - [x] Open and empty the amp
 - [x] Desolder the switches, knobs and selector from the main PCB
-- [ ] Fit everything in the amp
+- [x] Fit everything in the amp
 
 ### Case retro-engineering
 - [x] Retro-engineer every switch, knob and selector from the old amp
-- [ ] Create data bridge to send info between Raspberry and cluster master
-- [ ] RGB led status on "New class A" logo
-- [ ] Retrofit an OLED or white LCD display to show info from Arduino
-- [ ] Get positions from selectors to choose which info to display & from which Raspberry
-- [ ] On/Off button to power the display and LED
+- [x] Create data bridge to send info between Raspberry and cluster master
+- [x] RGB led status on "New class A" logo
+- [x] Retrofit an OLED or white LCD display to show info from Arduino
+- [ ] ~~Get positions from selectors to choose which info to display & from which Raspberry~~
+- [x] On/Off button to power the display and LED
